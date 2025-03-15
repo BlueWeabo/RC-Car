@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,34 +9,34 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" power)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" power)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(stackup
@@ -80,9 +80,10 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00030fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5f55f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -92,7 +93,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -100,16 +100,20 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -178,19 +182,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6147275f-50a8-47d0-9a30-4d05ae7eba20")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -218,7 +209,7 @@
 			)
 		)
 		(path "/79f7754f-dfa2-4294-a43e-ba0ae689501f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -438,7 +429,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "6c103711-83db-4cc5-a0fe-5e27cac10f3d")
 		)
@@ -497,6 +488,7 @@
 			(pintype "passive")
 			(uuid "8f75c8e0-083f-463c-b317-2079fe143069")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -537,19 +529,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "880f43be-ea7d-435b-8bc5-4fea0c18c996")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -577,7 +556,7 @@
 			)
 		)
 		(path "/4ca90e28-52cb-471f-bf06-f60a3495da87")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -797,7 +776,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "80b48416-0917-4581-ad41-eb738d64ad63")
 		)
@@ -856,6 +835,7 @@
 			(pintype "passive")
 			(uuid "2bcaaa91-2be6-4fe7-9d67-57aa77172ade")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -873,7 +853,7 @@
 		(uuid "5388d83d-cb77-437e-8385-4f3e679dc073")
 		(at 111 88.5 -90)
 		(property "Reference" "RV1"
-			(at 0 -0.5 -90)
+			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "00158b89-c46d-4be9-ab73-71de55a96dce")
@@ -885,7 +865,7 @@
 			)
 		)
 		(property "Value" "R_Potentiometer"
-			(at 0 1 -90)
+			(at 0 1 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "f7a6748c-5dc7-4d02-8182-3f81930d53cc")
@@ -896,21 +876,8 @@
 				)
 			)
 		)
-		(property "Footprint" "CustomElements:PotentiometerSlider88mm"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2e62b597-8cf0-43f4-acfb-548ed5266dcd")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -923,7 +890,7 @@
 			)
 		)
 		(property "Description" "Potentiometer"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -937,7 +904,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/2f748db1-e231-44cb-8910-afaf5dffbfc0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_rect
@@ -947,7 +914,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "da73f940-d00e-4dbb-9f7e-c8843a7c0116")
 		)
@@ -958,12 +925,12 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "2243102f-0b23-495d-a932-4e6e04b0d264")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 2.5 -90)
+			(at 0 2.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "60e21767-5991-4c3b-b9b9-b4c0b29fa751")
@@ -1023,6 +990,7 @@
 			(remove_unused_layers no)
 			(uuid "11fd5aee-1be3-4da3-8b6a-6dc9ff29ccd1")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
@@ -1048,19 +1016,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c1266e1f-f04e-43d9-80e0-d2ac16d78bb5")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1093,7 +1048,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/75ad00a6-5559-4632-a461-4f6c0c748c69")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1287,6 +1242,7 @@
 			(pintype "passive")
 			(uuid "6b14551b-02c7-4942-8845-7c61cd3cc265")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1327,19 +1283,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8a7025c0-b974-4d30-952f-863581b9cf06")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -1368,7 +1311,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/62495113-c95c-452b-96ee-9a5397b66ff1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1562,6 +1505,7 @@
 			(pintype "passive")
 			(uuid "4c8e86f7-9a65-49f3-976d-19444d3c87fa")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1602,19 +1546,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "885a5db3-1f87-443e-8e38-d7002a2ee3c5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -1642,7 +1573,7 @@
 			)
 		)
 		(path "/31a4b259-ec28-4804-b4d7-6277cf4fbc01")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1862,7 +1793,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "3a6e59ab-108b-4af9-97a4-ffa9665c217a")
 		)
@@ -1921,6 +1852,7 @@
 			(pintype "passive")
 			(uuid "5b68fd53-3413-4338-8d43-3cce632748cc")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1961,19 +1893,6 @@
 				)
 			)
 		)
-		(property "Footprint" "CustomElements:PotentiometerSlider88mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a942b95c-f743-42ec-80ac-3a5d6b974d2e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -2002,7 +1921,7 @@
 		)
 		(property ki_fp_filters "Potentiometer*")
 		(path "/ddceff10-8a93-45c5-af3c-bdff5cf35081")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_rect
@@ -2012,7 +1931,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "81f18141-16c2-4863-b479-583637a6e8cf")
 		)
@@ -2023,7 +1942,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "e04aabc7-bca8-482a-bf3a-c3f78db8a721")
 		)
@@ -2088,6 +2007,7 @@
 			(remove_unused_layers no)
 			(uuid "55a17552-ad51-443a-bfea-e266dbc49667")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
@@ -2113,19 +2033,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4a20a1f7-f06f-4a49-ac7e-fbb07b180808")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2158,7 +2065,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/aa536367-e860-4336-a4bb-54bd9909e539")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2352,6 +2259,7 @@
 			(pintype "passive")
 			(uuid "3e16154a-0c42-49da-bb77-3218ddaf9bce")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2392,19 +2300,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ebdd4611-8baa-4b17-a963-c92cd4d623b1")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -2432,7 +2327,7 @@
 			)
 		)
 		(path "/daaeeccc-c405-4a3f-b514-6a78d1b8a470")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2652,7 +2547,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "73b0b332-9137-45c3-8862-333f55b77c13")
 		)
@@ -2711,6 +2606,7 @@
 			(pintype "passive")
 			(uuid "0b22a159-2647-4729-9dc7-2c1b719f73e8")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2751,19 +2647,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f5c1e9af-0fc9-41ca-8b9f-1cbf502f0690")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -2792,7 +2675,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/cbc81eca-b53d-4fff-ab5d-854119cf7e4e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2986,6 +2869,7 @@
 			(pintype "passive")
 			(uuid "ad5f24a1-4a29-43ea-b106-4a9ccb9a37ee")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3026,19 +2910,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Module:Arduino_Nano"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6911d72e-d7e4-4cbd-bb68-8b7cde1e64aa")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf"
 			(at 0 0 180)
 			(unlocked yes)
@@ -3067,7 +2938,7 @@
 		)
 		(property ki_fp_filters "Arduino*Nano*")
 		(path "/6daa3ff0-a1d7-4c7a-aac2-6941dc516f08")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3733,6 +3604,7 @@
 			(pintype "power_in")
 			(uuid "c75bdca8-ff6b-4aac-bbb8-539eb73edaf3")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Module.3dshapes/Arduino_Nano_WithMountingHoles.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3775,20 +3647,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Battery:BatteryHolder_MPD_BH-18650-PC2"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "9f4ac5a8-888a-478f-87cd-eefed022bd56")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -3818,7 +3676,7 @@
 			)
 		)
 		(path "/a0be02da-966f-4383-a26d-2b1a434beb82")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3967,7 +3825,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "0dfb3b28-8c2a-4413-a366-00f1e34636e9")
 		)
-		(pad "1" thru_hole rect
+		(pad "1" thru_hole circle
 			(at 0 0 270)
 			(size 3.5 3.5)
 			(drill 2)
@@ -3978,7 +3836,7 @@
 			(pintype "passive")
 			(uuid "66f59316-344c-43b6-95a0-a2baacd538b6")
 		)
-		(pad "2" thru_hole circle
+		(pad "2" thru_hole rect
 			(at 72 0 270)
 			(size 3.5 3.5)
 			(drill 2)
@@ -3989,6 +3847,7 @@
 			(pintype "passive")
 			(uuid "e1003758-ea16-4431-83f1-01e4a1e61005")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_MPD_BH-18650-PC2.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4031,22 +3890,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "RF_Module:nRF24L01_Breakout"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "65a34843-f0f8-4967-91c8-cd20671ce317")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4060,7 +3905,7 @@
 			)
 		)
 		(property "Description" "Ultra low power 2.4GHz RF Transceiver, Carrier PCB"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4075,7 +3920,7 @@
 		)
 		(property ki_fp_filters "nRF24L01*Breakout*")
 		(path "/68ab2abe-823b-4396-8528-30b86de032cb")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4196,7 +4041,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "B.SilkS")
 			(uuid "3b10000c-7164-4df2-ba3b-8068fdf9862b")
 		)
@@ -4423,7 +4268,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 25 "Net-(A1-D12)")
+			(net 14 "Net-(A1-D11)")
 			(pinfunction "MOSI")
 			(pintype "input")
 			(uuid "28bd898a-ef03-4079-a494-ba154279d2d5")
@@ -4434,7 +4279,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 14 "Net-(A1-D11)")
+			(net 25 "Net-(A1-D12)")
 			(pinfunction "MISO")
 			(pintype "output")
 			(uuid "dedaff36-a3fc-4ab6-9196-ded1589ff810")
@@ -4450,6 +4295,7 @@
 			(pintype "output")
 			(uuid "2ea008e2-7186-4392-b99d-609f31ca613a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/RF_Module.3dshapes/nRF24L01_Breakout.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4471,7 +4317,7 @@
 		(property "Reference" "BT1"
 			(at 36 -1 90)
 			(layer "B.SilkS")
-			(uuid "cff5fe1d-1e64-4ca3-989e-4121cb9f359f")
+			(uuid "612fac60-02e0-4639-b5fb-61da11be597e")
 			(effects
 				(font
 					(size 1 1)
@@ -4483,7 +4329,7 @@
 		(property "Value" "Battery_Cell"
 			(at 36 0.8 90)
 			(layer "B.Fab")
-			(uuid "db5d5fa5-baa6-40bd-a887-30fabb76b915")
+			(uuid "68bc15ed-0de5-41f4-923e-232dd10f8832")
 			(effects
 				(font
 					(size 1 1)
@@ -4492,26 +4338,12 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Battery:BatteryHolder_MPD_BH-18650-PC2"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "055f4986-a523-4aef-ad08-56861ca9d8e0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "c1ea3d54-8871-4b5a-af76-a01ab7aadff9")
+			(uuid "dbb58d1e-fcf1-456d-8446-50b2b31eace9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4521,11 +4353,11 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "58896697-537e-459b-bfd9-200bc8ddf6d9")
+			(uuid "7b6a70ba-f482-4adf-9f84-e07d24b4bd25")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4535,7 +4367,7 @@
 			)
 		)
 		(path "/eb24c8c5-8457-49b4-b037-9fd287b171fa")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "RC-CarPCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4684,7 +4516,7 @@
 			(layers "*.Cu" "*.Mask")
 			(uuid "6cd1dfb5-2dd3-4e21-82c4-94937de16b13")
 		)
-		(pad "1" thru_hole rect
+		(pad "1" thru_hole circle
 			(at 0 0 90)
 			(size 3.5 3.5)
 			(drill 2)
@@ -4695,7 +4527,7 @@
 			(pintype "passive")
 			(uuid "78edafca-658d-4201-b132-27e89e4f5cfb")
 		)
-		(pad "2" thru_hole circle
+		(pad "2" thru_hole rect
 			(at 72 0 90)
 			(size 3.5 3.5)
 			(drill 2)
@@ -4706,6 +4538,7 @@
 			(pintype "passive")
 			(uuid "92f06a95-6b1b-4469-a0e6-2c29fa74523c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_MPD_BH-18650-PC2.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4725,7 +4558,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "16dfd98e-b782-47eb-b5df-bbc5c9db990b")
 	)
@@ -4786,60 +4619,44 @@
 		(uuid "a139384d-c28e-4eb4-90e2-f714d3d4f3c3")
 	)
 	(segment
-		(start 146.505 50.2895)
-		(end 146.505 65.995)
+		(start 161.5 43.5)
+		(end 161.5 74.02)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 14)
-		(uuid "68b37e7e-d5e9-4484-9abb-010d4b22907c")
+		(uuid "600aa9c2-6103-4eac-b974-9e9ab8cf568d")
 	)
 	(segment
-		(start 146.505 65.995)
-		(end 146.5 66)
+		(start 161.5 74.02)
+		(end 156.5 79.02)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 14)
-		(uuid "73749345-eae1-4f27-895c-ae8ef49c65a6")
-	)
-	(segment
-		(start 156.5 79.02)
-		(end 153.5 76.02)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 14)
-		(uuid "e69d4a0d-644e-4da8-bb0d-3df21682502b")
-	)
-	(segment
-		(start 153.5 76.02)
-		(end 153.5 66)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 14)
-		(uuid "fd582d4d-6002-4337-98cc-5c2e6cfcede7")
+		(uuid "ff2b53de-d64e-43dc-ba92-722176843642")
 	)
 	(via
-		(at 146.5 66)
+		(at 161.5 43.5)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 14)
-		(uuid "884a7ba5-4eea-4cd8-b3db-7dfc4845eb10")
-	)
-	(via
-		(at 153.5 66)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(net 14)
-		(uuid "aabe3120-e84b-4c7e-8919-64312e407ccc")
+		(uuid "b42a63ff-a8cb-46a1-bd24-4b8896af2943")
 	)
 	(segment
-		(start 146.5 66)
-		(end 153.5 66)
+		(start 153.2945 43.5)
+		(end 161.5 43.5)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 14)
-		(uuid "b51f5602-793b-4d36-8d0f-4901539410dc")
+		(uuid "17e81f2c-c96c-423c-a312-d0e77f6c7048")
+	)
+	(segment
+		(start 149.045 47.7495)
+		(end 153.2945 43.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 14)
+		(uuid "90752eff-978c-43a0-88d5-157ee5e83ae2")
 	)
 	(segment
 		(start 141.26 84.1)
@@ -5202,44 +5019,60 @@
 		(uuid "2b1a6c61-2400-4b48-92bc-8a437758b6b8")
 	)
 	(segment
-		(start 161.5 71.48)
-		(end 161.5 43.5)
+		(start 146.505 50.2895)
+		(end 146.505 65.995)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 25)
-		(uuid "3f5144bf-6cb7-4fde-a572-5e72ff4322b1")
+		(uuid "68b37e7e-d5e9-4484-9abb-010d4b22907c")
 	)
 	(segment
-		(start 156.5 76.48)
-		(end 161.5 71.48)
+		(start 146.505 65.995)
+		(end 146.5 66)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 25)
-		(uuid "e960f2eb-5b45-435b-aa17-cdfe264985ed")
+		(uuid "73749345-eae1-4f27-895c-ae8ef49c65a6")
+	)
+	(segment
+		(start 153.5 66)
+		(end 156.5 69)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 25)
+		(uuid "9fb19f61-dcdf-4c43-9bac-68ac8aead4dc")
+	)
+	(segment
+		(start 156.5 69)
+		(end 156.5 76.48)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 25)
+		(uuid "e85257ac-e9e9-41a7-84e4-1e495a6547e6")
 	)
 	(via
-		(at 161.5 43.5)
+		(at 146.5 66)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
 		(net 25)
-		(uuid "b42a63ff-a8cb-46a1-bd24-4b8896af2943")
+		(uuid "884a7ba5-4eea-4cd8-b3db-7dfc4845eb10")
+	)
+	(via
+		(at 153.5 66)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net 25)
+		(uuid "aabe3120-e84b-4c7e-8919-64312e407ccc")
 	)
 	(segment
-		(start 153.2945 43.5)
-		(end 161.5 43.5)
+		(start 146.5 66)
+		(end 153.5 66)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 25)
-		(uuid "17e81f2c-c96c-423c-a312-d0e77f6c7048")
-	)
-	(segment
-		(start 149.045 47.7495)
-		(end 153.2945 43.5)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 25)
-		(uuid "90752eff-978c-43a0-88d5-157ee5e83ae2")
+		(uuid "b51f5602-793b-4d36-8d0f-4901539410dc")
 	)
 	(segment
 		(start 182.5 96.5)
@@ -5529,4 +5362,5 @@
 		(net 31)
 		(uuid "d20da9d2-592d-4938-8b94-52676b512eca")
 	)
+	(embedded_fonts no)
 )

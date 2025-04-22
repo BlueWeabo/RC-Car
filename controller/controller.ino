@@ -24,7 +24,7 @@
 #define CE 7
 #define CSN 8
 
-#define DEBUG
+//#define DEBUG
 
 RF24 radio(CE, CSN); // CE, CSN
 
@@ -49,7 +49,7 @@ void setup() {
     pinMode(TURN, INPUT);
     while (!radio.begin()) {
     #ifdef DEBUG
-        Serial.println("FUUUCK");
+        Serial.println("radio is not working");
     #endif
     }
     radio.openWritingPipe(address);

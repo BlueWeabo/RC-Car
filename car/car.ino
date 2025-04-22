@@ -10,7 +10,7 @@
 #define DIR 4
 #define SERVO 5
 
-#define DEBUG
+//#define DEBUG
 
 Servo servo;
 RF24 radio(CE, CSN); // CE, CSN
@@ -26,7 +26,7 @@ void setup() {
     servo.attach(SERVO, 500, 2500);
     while(!radio.begin()) {
         #ifdef DEBUG
-        Serial.println("radio is fucked");
+        Serial.println("radio is not working");
         #endif
     }
     radio.openReadingPipe(0, address);
